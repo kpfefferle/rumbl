@@ -11,6 +11,7 @@ defmodule Rumbl.Video do
 
     belongs_to :user, Rumbl.User, foreign_key: :user_id
     belongs_to :category, Rumbl.Category, foreign_key: :category_id
+    has_many :annotations, Rumbl.Annotation
 
     timestamps()
   end

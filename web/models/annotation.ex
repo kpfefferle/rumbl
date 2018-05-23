@@ -4,6 +4,7 @@ defmodule Rumbl.Annotation do
   schema "annotations" do
     field :body, :string
     field :at, :integer
+
     belongs_to :user, Rumbl.User, foreign_key: :user_id
     belongs_to :video, Rumbl.Video, foreign_key: :video_id
 
